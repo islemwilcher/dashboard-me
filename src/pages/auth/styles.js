@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
     root:{
-        
+        backgroundColor: 'whitesmoke'
     },
     container:{
         display: 'flex',
@@ -12,7 +12,8 @@ export default makeStyles((theme) => ({
         margin: 'auto',
     },
     paper:{
-        margin:'auto'
+        margin:'auto',
+        borderRadius: '10px'
     },
     form:{
         padding: '10px',

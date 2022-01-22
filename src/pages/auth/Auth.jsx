@@ -32,7 +32,7 @@ const Auth = () => {
     }
 
     return(
-    <>
+    <div className={classes.root}>
         <Container className={classes.container} >
             <Grid className={classes.grid} xs={12} md={8} lg={6}>
                 <Paper className={classes.paper} raised elevation={3}>
@@ -45,7 +45,7 @@ const Auth = () => {
                 </Paper>
             </Grid>
         </Container>
-    </>
+    </div>
     )
 };
 
