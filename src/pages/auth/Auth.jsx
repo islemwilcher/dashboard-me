@@ -34,8 +34,9 @@ const Auth = () => {
     return(
     <div className={classes.root}>
         <Container className={classes.container} >
-            <Grid className={classes.grid} xs={12} md={8} lg={6}>
-                <Paper className={classes.paper} raised elevation={3}>
+        <Grid container className={classes.grid}>
+            <Grid item className={classes.gridItem} xs={12} md={8} lg={6}>
+                <Paper className={classes.paper} elevation={3}>
                     <form className={classes.form} autoComplete='off' noValidate onSubmit={handleSubmit}>
                         <Typography className={classes.title} variant='h4'>Log In</Typography>
                         <TextField className={classes.textfield} name='email' variant='outlined' label='Email' fullWidth onChange={handleChange} />
@@ -44,6 +45,7 @@ const Auth = () => {
                     </form>
                 </Paper>
             </Grid>
+        </Grid>
         </Container>
     </div>
     )

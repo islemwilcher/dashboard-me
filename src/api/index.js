@@ -12,3 +12,6 @@ API.interceptors.request.use((req) => {
 
 //auth
 export const signIn = (formData) => API.post('/auth/signin',  formData)
+
+//projects
+export const projectsStats = () => API.get('/projects/statistic')
