@@ -11,14 +11,13 @@ const Chart = ({ data, title, grid, dataKey }) => {
     console.log(data);
 
     return (
-        <div>
+        <div className={classes.chart}>
             <Typography className={classes.title} variant='h5'>{title}</Typography>
             <ResponsiveContainer width="100%"  aspect={4 / 1}>
                 <LineChart data={data}>
-                    {/* <CartesianGrid stroke="#5550bd" /> */}
                     <XAxis dataKey="name" />
                     <YAxis />
-                    <Line type="monotone" dataKey='Projects' stroke="green" />
+                    <Line type="monotone" dataKey='Projects' stroke="#5550bd" />
                     {grid && <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5" />}
                 </LineChart>
             </ResponsiveContainer>

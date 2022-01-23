@@ -28,11 +28,14 @@ const Dashboard = () => {
     }, [dispatch, MONTHS])
 
     return (
-        <Container>
-            <Paper className={classes.paper} elevation={3} >
-                <Chart data={projectStats} title='Projects Analytics' grid dataKey='added projects' />
-            </Paper>
-        </Container>
+        <>
+        <Typography variant="h2">Dashboard</Typography>
+            <div className={classes.container}>
+                <Paper className={classes.paper} elevation={6}>
+                    <Chart data={projectStats} title='Projects Analytics' grid dataKey='added projects' />
+                </Paper>
+            </div>
+        </>
     );
 };
 

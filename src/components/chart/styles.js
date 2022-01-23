@@ -4,4 +4,7 @@ export default makeStyles((theme) => ({
     title: {
         marginBottom: '20px',
     },
+    chart:{
+        margin: '20px 0',
+    },
 }))

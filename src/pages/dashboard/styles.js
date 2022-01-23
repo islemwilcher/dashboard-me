@@ -1,14 +1,18 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
-
-    paper: {
-        padding: '10px',
-        height: '240px',
+    container: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
+    paper:{
+        width: '80%',
+    },
+
     [theme.breakpoints.down('sm')]: {
-        paper: {
-            height: '150px',
-        }
+        paper:{
+            width: '98%',
+        },
     }
 }))
