@@ -27,17 +27,17 @@ export default makeStyles((theme) => ({
         padding: '10px',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
-        textAlign: 'center',
+        alignItems: 'center !important',
+        textAlign: 'center !important',
     },
     title:{
-        margin: '30px',
+        margin: '30px !important',
     },
     textfield:{
-        margin: '10px',
+        margin: '10px !important',
     },
     buttonSubmit:{
-        margin: '30px',
+        margin: '30px !important',
     },
     [theme.breakpoints.down('sm')]: {
         form: {

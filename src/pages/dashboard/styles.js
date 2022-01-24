@@ -6,12 +6,30 @@ export default makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    paper:{
-        width: '80%',
+    flex: {
+        display: 'flex !important',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        margin: '30px auto',
+    },
+    chart: {
+    },
+    chartPaper:{
+        width: '100%',
+    },
+    manage: {
+        height: '100%',
+    },
+    managePaper:{
+        width: '100%',
+        height: '300px',
+        padding: '12px',
+        display: 'flex',
+        alignItems: 'end'
     },
 
     [theme.breakpoints.down('sm')]: {
-        paper:{
+        chartPaper:{
             width: '98%',
         },
     }

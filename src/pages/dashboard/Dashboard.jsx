@@ -7,8 +7,9 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getStatistic } from '../../actions/projects'
 
 //components
-import { Container, Paper, Grid, Typography } from '@material-ui/core'
+import { Container, Paper, Grid, Typography, Button } from '@material-ui/core'
 import Chart from '../../components/chart/Chart'
+import IMG from '../../assets/manage.jpg'
 
 //styles hook
 import useStyles from './styles'
@@ -27,14 +28,27 @@ const Dashboard = () => {
         dispatch(getStatistic(MONTHS, setProjectStates))
     }, [dispatch, MONTHS])
 
+    const styles = {
+            backgroundImage: 'url(' + IMG + ')',
+            ackgroundSize: 'contain'
+    }
+
     return (
         <>
-        <Typography variant="h2">Dashboard</Typography>
-            <div className={classes.container}>
-                <Paper className={classes.paper} elevation={6}>
-                    <Chart data={projectStats} title='Projects Analytics' grid dataKey='added projects' />
-                </Paper>
-            </div>
+            <Grid className={classes.flex}>
+                <Grid className={classes.chart} item xs={12} md={8} lg={8}>
+                    <div className={classes.container}>
+                        <Paper className={classes.chartPaper} elevation={6}>
+                            <Chart data={projectStats} title='Projects Analytics' grid dataKey='added projects' />
+                        </Paper>
+                    </div>
+                </Grid>
+                <Grid className={classes.manage} item xs={12} md={4} lg={2} >
+                    <Paper elevation={3} className={classes.managePaper} style={styles}>
+                        <Button variant='contained' color='primary' size='large' fullWidth >Manage</Button>
+                    </Paper>
+                </Grid>
+            </Grid>
         </>
     );
 };
