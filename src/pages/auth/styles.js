@@ -23,7 +23,7 @@ export default makeStyles((theme) => ({
         borderRadius: '10px',
     },
     form:{
-        minHeight: '60vh',
+        minHeight: '50vh',
         padding: '10px',
         display: 'flex',
         flexDirection: 'column',

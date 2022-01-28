@@ -6,13 +6,12 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid,Tooltip, ResponsiveContain
 //styles hook
 import useStyles from './styles'
 
-const Chart = ({ data, title, grid, dataKey }) => {
+const Chart = ({ data, grid, dataKey }) => {
     const classes = useStyles()
     console.log(data);
 
     return (
         <div className={classes.chart}>
-            <Typography className={classes.title} variant='h5'>{title}</Typography>
             <ResponsiveContainer width="100%"  aspect={4 / 1}>
                 <LineChart data={data}>
                     <XAxis dataKey="name" />
