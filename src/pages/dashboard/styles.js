@@ -3,33 +3,33 @@ import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles((theme) => ({
     main:{
         display: 'flex',
-        height: '100vh'
+        height: '100vh',
+        width: '100vw',
+        backgroundColor: 'red',
     },
     leftside:{
-        flex: '2',
-        backgroundColor: 'whitesmoke',
-        height: '100%',
+        width: '60px',
+        height: '100vh',
         display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
+        alignItems: 'start',
     },
     rightside: {
-        flex: '6',
+        width: '80%',
+        margin: 'auto',
         height: '100%',
     },
-    container: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
     top: {
+        width: '100%',
         padding: '10px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-evenly'
     },
+
     chart: {
         width: '100%',
+        display: 'flex',
+        alignItems: 'center',
     },
     chartPaper:{
         width: '100%',
@@ -62,9 +62,7 @@ export default makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down('md')]: {
-        chartPaper:{
-            width: '100%',
-        },
+
         top: {
             flexDirection: 'column',
             alignItems: 'center',
@@ -74,22 +72,12 @@ export default makeStyles((theme) => ({
             width: '90%',
         },
         manage: {
-            backgroundColor: 'purpul',
             width: '80%',
             height: '60%',
-        },
-        leftside: {
-            flexDirection: 'row',
         },
     },
 
     [theme.breakpoints.down('sm')]: {
-        chartPaper:{
-            width: '100%',
-        },
-        chart: {
-            width: '90%',
-        },
         manage: {
             marginTop: '30px',
             width: '260px',
