@@ -5,7 +5,6 @@ export default makeStyles((theme) => ({
         display: 'flex',
         height: '100vh',
         width: '100vw',
-        backgroundColor: 'red',
     },
     leftside:{
         width: '60px',
@@ -14,13 +13,13 @@ export default makeStyles((theme) => ({
         alignItems: 'start',
     },
     rightside: {
-        width: '80%',
+        width: '100%',
         margin: 'auto',
         height: '100%',
     },
     top: {
-        width: '100%',
-        padding: '10px',
+        width: '90%',
+        margin: '30px auto',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-evenly'
@@ -30,10 +29,14 @@ export default makeStyles((theme) => ({
         width: '100%',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center'
     },
     chartPaper:{
         width: '100%',
-        height: '200px',
+        height: '220px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     manage: {
         height: '100%',
@@ -62,7 +65,6 @@ export default makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down('md')]: {
-
         top: {
             flexDirection: 'column',
             alignItems: 'center',

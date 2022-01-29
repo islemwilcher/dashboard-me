@@ -18,7 +18,7 @@ const Navbar = () => {
     return(
         <>
             <div ref={ref} className={classes.nav}>
-                <Button className={classes.menubtn} type="button" onClick={() =>setIsVisible(!isVisible)}><RiMenu5Line size='24' /></Button>
+                <Button className={classes.menubtn} type="button" onClick={() =>setIsVisible(!isVisible)}><RiMenu5Line size='40' /></Button>
             </div>
             {isVisible && <Menu />}
         </>

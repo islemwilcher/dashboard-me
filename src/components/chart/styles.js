@@ -5,6 +5,15 @@ export default makeStyles((theme) => ({
         marginBottom: '20px',
     },
     chart:{
+        width: '100%',
+        height: '80%',
         margin: '20px 0',
+    },
+
+    [theme.breakpoints.down('sm')]: {
+        chart: {
+            height: '50%',
+            margin: 'auto',
+        },
     },
 }))

@@ -18,7 +18,6 @@ import useStyles from './styles'
 const Dashboard = () => {
 
     const dispatch = useDispatch()
-    const { statistic } = useSelector(state => state.projects)
     const [projectStats, setProjectStates] = useState([])
 
     const classes = useStyles()
@@ -35,15 +34,16 @@ const Dashboard = () => {
     }
 
     return (
+        <>
         <div className={classes.main}>
             <div className={classes.leftside}>
                 <Navbar />
             </div>
             <div className={classes.rightside}>
                 <Grid className={classes.top}>
-                    <Grid className={classes.chart} item xs={12} md={8} lg={8}>
+                    <Grid className={classes.chart} item xs={12} md={12} lg={8}>
                             <Paper className={classes.chartPaper} elevation={6}>
-                                <Chart data={projectStats} grid dataKey='added projects' />
+                                <Chart data={projectStats} dataKey='added projects' />
                             </Paper>
                     </Grid>
                     <Grid className={classes.manage} item xs={12} md={4} lg={2} >
@@ -57,6 +57,7 @@ const Dashboard = () => {
                 </Grid>
             </div>
         </div>
+        </>
     );
 };
 
