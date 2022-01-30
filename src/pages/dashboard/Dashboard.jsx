@@ -1,7 +1,7 @@
 
 //hooks
 import { useEffect, useMemo, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 //actions
 import { getStatistic } from '../../actions/projects'
@@ -27,11 +27,6 @@ const Dashboard = () => {
     useEffect(() => {
         dispatch(getStatistic(MONTHS, setProjectStates))
     }, [dispatch, MONTHS])
-
-    const styles = {
-            backgroundImage: 'url(' + IMG + ')',
-            ackgroundSize: 'contain'
-    }
 
     return (
         <>

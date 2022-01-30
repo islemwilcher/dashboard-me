@@ -12,7 +12,7 @@ const Chart = ({ data, grid, dataKey }) => {
     var width = window.innerWidth
 
     return (
-        <div className={classes.chart}>
+        <div className={classes.chart} title='chart'>
             {width > 800 ? (
 
             <ResponsiveContainer width="100%"  aspect={4 / 1}>

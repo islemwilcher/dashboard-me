@@ -22,6 +22,6 @@ describe('test the auth', () => {
                 </Router>
             </Provider>
         );
-        expect(queryByTitle('auth')).toBeTruthy()
+        expect(queryByTitle('auth')).toBeDefined()
     })
 })
