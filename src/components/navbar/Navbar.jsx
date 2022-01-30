@@ -3,7 +3,7 @@ import { useRef, useState } from 'react'
 
 import useStyles from './styles'
 import Menu from './Menu'
-import {RiMenu5Line} from 'react-icons/ri'
+import { HiMenuAlt1 } from 'react-icons/hi'
 import { Button } from '@material-ui/core'
 
 import useBurger from './useBurger'
@@ -18,7 +18,7 @@ const Navbar = () => {
     return(
         <>
             <div ref={ref} className={classes.nav}>
-                <Button className={classes.menubtn} type="button" onClick={() =>setIsVisible(!isVisible)}><RiMenu5Line size='40' /></Button>
+                <Button className={classes.menubtn} type="button" onClick={() =>setIsVisible(!isVisible)}><HiMenuAlt1 size='40' /></Button>
             </div>
             {isVisible && <Menu />}
         </>

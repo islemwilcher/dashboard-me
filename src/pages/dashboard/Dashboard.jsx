@@ -47,7 +47,7 @@ const Dashboard = () => {
                             </Paper>
                     </Grid>
                     <Grid className={classes.manage} item xs={12} md={4} lg={2} >
-                        <Card className={classes.card} raised elevation={3}>
+                        <Card className={classes.card} raised elevation={6}>
                             <CardMedia className={classes.media} image={IMG} />
                             <div className={classes.action}>
                                 <Button className={classes.button}>manage projects</Button>
