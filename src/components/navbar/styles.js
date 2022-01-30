@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'start',
         justifyContent: 'start',
-        backgroundColor: '#9addfb',
+        backgroundColor: '#68cdf8',
         height: '100%',
     },
     menu:{
@@ -14,12 +14,49 @@ export default makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#b3e5fc',
+        backgroundColor: '#68cdf8',
         position: 'absolute',
         zIndex: '10',
+        animation: `$slowEffect 2000ms ${theme.transitions.easing.easeOut}`,
     },
+
+    "@keyframes slowEffect": {
+        "0%": {
+            opacity: 0.5,
+            transform: "translateX(-100%)"
+        },
+        "100%": {
+            opacity: 1,
+            transform: "translateX(0)"
+        }
+    },
+
     menubtn:{
         zIndex: '11'
+    },
+    menu_link_container: {
+        display: 'flex',
+        flexDirection: 'column',
+    },
+    menu_link:{
+        display: 'flex',
+        alignItems: 'center',
+        textDecoration: 'none',
+        color: 'black',
+        borderRadius: '10px',
+        padding: '0px 20px',
+        '&:hover': {
+            background: '#81d4fa',
+        },
+    },
+    menu_link_h3:{
+        marginLeft: '10px',
+    },
+    icon:{
+        color: 'gray',
+        '&:hover': {
+            color: 'black',
+        },
     },
 
     [theme.breakpoints.down('md')]: {

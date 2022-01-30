@@ -7,7 +7,6 @@ const Menu = () => {
     return (
         <>
             <div className={classes.menu}>
-                <h1>hello menu</h1>
                 <MenuLinks />
             </div>
         </>
