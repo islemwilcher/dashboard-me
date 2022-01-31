@@ -34,18 +34,18 @@ const Auth = () => {
     return(
     <div>
         <Container className={classes.container} >
-        <Grid container className={classes.grid}>
-            <Grid item className={classes.gridItem} xs={12} md={8} lg={6}>
-                <Paper className={classes.paper} elevation={3}>
-                    <form className={classes.form} autoComplete='off' noValidate onSubmit={handleSubmit}>
-                        <Typography className={classes.title} variant='h4'>Log In</Typography>
-                        <TextField className={classes.textfield} name='email' variant='outlined' label='Email' fullWidth onChange={handleChange} />
-                        <TextField className={classes.textfield} name='password' variant='outlined' label='Password' type='password' fullWidth onChange={handleChange} />
-                        <Button className={classes.buttonSubmit} variant='contained' color='primary' size='large' type='submit' fullWidth >Log In</Button>
-                    </form>
-                </Paper>
+            <Grid container className={classes.grid}>
+                <Grid item className={classes.gridItem} xs={12} md={8} lg={6}>
+                    <Paper className={classes.paper} elevation={3}>
+                        <form className={classes.form} autoComplete='off' noValidate onSubmit={handleSubmit}>
+                            <Typography className={classes.title} variant='h4'>Log In</Typography>
+                            <TextField className={classes.textfield} name='email' variant='outlined' label='Email' fullWidth onChange={handleChange} />
+                            <TextField className={classes.textfield} name='password' variant='outlined' label='Password' type='password' fullWidth onChange={handleChange} />
+                            <Button className={classes.buttonSubmit} variant='contained' color='primary' size='large' type='submit' fullWidth >Log In</Button>
+                        </form>
+                    </Paper>
+                </Grid>
             </Grid>
-        </Grid>
         </Container>
     </div>
     )

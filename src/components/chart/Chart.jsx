@@ -1,5 +1,5 @@
 
-import { useEffect } from 'react'
+
 //components
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts'
 

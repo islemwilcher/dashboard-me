@@ -15,3 +15,9 @@ export const signIn = (formData) => API.post('/auth/signin',  formData)
 
 //projects
 export const projectsStats = () => API.get('/projects/statistic')
+export const fetchProjects = () => API.get('/projects')
+export const fetchProject = (id) => API.get(`/projects/find/${id}`)
+
+export const createProject = (project) => API.post('/projects', project)
+export const updateProject = (id, project) => API.patch(`/projects/${id}`, project)
+export const deleteProject = (id) => API.delete(`/projects/${id}`)
