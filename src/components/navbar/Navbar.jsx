@@ -17,7 +17,7 @@ const Navbar = () => {
     const classes = useStyles()
     return(
         <>
-            <div ref={ref} className={classes.nav}>
+            <div ref={ref} className={classes.nav} title='navbar' >
                 <Button className={classes.menubtn} type="button" onClick={() =>setIsVisible(!isVisible)}><HiMenuAlt1 size='40' /></Button>
             </div>
             {isVisible && <Menu />}

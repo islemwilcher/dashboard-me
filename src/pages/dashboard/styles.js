@@ -50,7 +50,7 @@ export default makeStyles((theme) => ({
         borderRadius: '5px',
         height: '180px',
         margin: 'auto',
-        width: '250px',
+        maxWidth: '250px',
     },
     media: {
         height: 0,

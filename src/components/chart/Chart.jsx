@@ -13,9 +13,8 @@ const Chart = ({ data, grid, dataKey }) => {
 
     return (
         <div className={classes.chart} title='chart'>
-            {width > 800 ? (
-
-            <ResponsiveContainer width="100%"  aspect={4 / 1}>
+            {width > 768 ? (
+            <ResponsiveContainer width="100%"  aspect={4}>
                 <LineChart data={data}>
                     <XAxis dataKey="name" />
                     <YAxis />
@@ -25,7 +24,7 @@ const Chart = ({ data, grid, dataKey }) => {
             </ResponsiveContainer>
             ):
             (
-                <ResponsiveContainer width="100%"  aspect={4 / 2.5}>
+                <ResponsiveContainer width="100%"  aspect={4 / 2.8}>
                 <LineChart data={data}>
                     <XAxis dataKey="name" />
                     <YAxis />
