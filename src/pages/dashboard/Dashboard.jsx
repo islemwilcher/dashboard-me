@@ -2,6 +2,7 @@
 //hooks
 import { useEffect, useMemo, useState } from 'react'
 import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 //actions
 import { getStatistic } from '../../actions/projects'
@@ -45,7 +46,7 @@ const Dashboard = () => {
                         <Card className={classes.card} raised elevation={6}>
                             <CardMedia className={classes.media} image={IMG} />
                             <div className={classes.action}>
-                                <Button className={classes.button}>manage projects</Button>
+                                <Button component={Link} to='/dashboard/manage' className={classes.button}>manage projects</Button>
                             </div>
                         </Card>
                     </Grid>
