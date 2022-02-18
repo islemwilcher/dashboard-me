@@ -40,7 +40,7 @@ export const getProject = (id) => async (dispatch) => {
 
 export const addProject = (project) => async (dispatch) => {
     try {
-        dispatch({ type:START_LOADING })
+        dispatch({ type: START_LOADING })
 
         const { data } = await api.createProject(project)
 
